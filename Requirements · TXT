@@ -2,6 +2,8 @@ streamlit
 plotly
 pandas
 numpy
-yfinance
 scikit-learn
+vaderSentiment
+textblob
+yfinance
 requests
