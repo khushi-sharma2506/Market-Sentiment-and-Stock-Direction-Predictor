@@ -235,8 +235,8 @@ if page == "🏠 Market Dashboard":
 
         st.dataframe(
             df_dash.style
-            .applymap(color_signal, subset=["Signal"])
-            .applymap(color_change, subset=["Change %"]),
+            .map(color_signal, subset=["Signal"])
+            .map(color_change, subset=["Change %"]),
             use_container_width=True, height=420
         )
 
