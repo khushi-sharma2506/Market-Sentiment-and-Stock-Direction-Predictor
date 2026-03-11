@@ -1,8 +1,0 @@
-plotly>=5.0.0
-pandas
-numpy
-scikit-learn
-vaderSentiment
-textblob
-yfinance
-requests
