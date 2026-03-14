@@ -78,7 +78,9 @@ def compute_indicators(df):
     df["MA_Cross"] = (df["MA10"] > df["MA50"]).astype(int)
     # Volatility
     df["Volatility"] = df["Close"].pct_change().rolling(14).std()
-    return df.dropna()
+    df = df.dropna(subset=["RSI", "MACD", "Signal"])
+    return df
+
 
 
 @st.cache_data(ttl=1800)
