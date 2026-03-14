@@ -127,6 +127,8 @@ def get_sentiment_score(ticker_name):
 
 
 def build_signal(df, sentiment=0.0):
+    if df.empty:
+    return "NO DATA", ["Stock data could not be fetched"]
     latest = df.iloc[-1]
     score = 0
     reasons = []
