@@ -190,8 +190,9 @@ page = st.sidebar.radio(
      "📈 Stock Analyzer", "🔄 Stock Comparison", "🤖 Model Comparison"]
 )
 st.sidebar.markdown("---")
-st.caption("Built by Khushi Sharma | B.Tech AIML")
-st.sidebar.caption("Data: Yahoo Finance · Sentiment: VADER\nML: Scikit-learn · Charts: Plotly")
+st.sidebar.caption("Built by Khushi Sharma | B.Tech AIML")
+st.sidebar.caption("Data: Yahoo Finance · Sentiment: VADER")
+st.sidebar.caption("ML: Scikit-learn · Charts: Plotly")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 1 — Market Dashboard
